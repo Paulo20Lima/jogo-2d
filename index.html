@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Jogo 2D - Robocup</title>
+    <!-- audio -->
+    <audio id="music" src="../audio/tetris.mp3" loop autoplay></audio>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-3 text-center text-light placar p-3 rounded">
+                <p class="txt-jogador">Robô 1</p>
+                <img src="./imgs/robo1.png" alt="Robô 1" width="13%">
+                <hr class="bg-light">
+                <p id="robo1Life" class="h4">Vida: 100 </p>
+                <p class="text-warning">Os valores das colisões são aleatórios</p><br><br>
+
+                <p class="txt-jogador my-4">Robô 2</p>
+                <img src="./imgs/robo2.png" alt="Robô 2" width="13%">
+                <hr class="bg-light">
+                <p id="robo2Life" class="h4">Vida: 100 </p>
+                <p class="text-warning">Os valores das colisões são aleatórios</p>
+            </div>
+
+            <div class="col-md-6 p-0 arena">
+                <div id="arena" class="m-auto">
+                    <img src="./imgs/robo1.png" id="robo1" class="robo" style="top: 1px; left: 20px;" alt="Robô 1">
+                    <img src="./imgs/robo2.png" id="robo2" class="robo" style="top: 540px; left: 500px;" alt="Robô 2">
+                    <div id="obstaculo" class="obstaculo"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>

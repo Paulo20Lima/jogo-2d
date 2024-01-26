@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imgs/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Playpen Sans', cursive;
+}
+
+#arena {
+    position: relative;
+    width: 750px;
+    height: 600px;
+    border: 3px solid #000;
+    background-image: 
+    url('../imgs/fiap.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 3px;  
+    margin: auto; 
+}
+
+.robo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: top 0.1s, left 0.1s;
+}
+
+.txt-jogador {
+    font-size: 2rem;
+}
+
+.placar{
+    background-color: #000;
+}
+
+.obstaculo {
+    background-color: #000; /* Cor do obstáculo */
+    width:  545px; /* Largura do obstáculo */
+    height: 50px; /* Altura do obstáculo */
+    position: absolute;
+    top: 200px; /* Posição vertical do obstáculo */
+    left: 200px; /* Posição horizontal do obstáculo */
+  }
+  
